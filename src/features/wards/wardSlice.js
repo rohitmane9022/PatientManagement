@@ -16,7 +16,7 @@ export const addWards= createAsyncThunk('/wards/addWards', async(bodyData)=>{
   return response.data.data;
 })
 export const deleteWardData = createAsyncThunk('/wards/deleteWardData', async(id)=>{
-  const response = await axios.delete(`https://hospitalmanagement.rohitmane2.repl.co/wards/${id}`)
+  const response = await axios.delete(`https://hospitalmanagement.rohitmane2.repl.co/wards/${id}`) 
   return response.data.data
 })
 
